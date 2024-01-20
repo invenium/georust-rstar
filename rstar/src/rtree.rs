@@ -689,7 +689,7 @@ where
     ///   [0.0, 1.0],
     ///   [1.0, 0.0],
     /// ]);
-    /// assert_eq!(tree.nearest_neighbors(&[1.0, 1.0]), &[&[0.0, 1.0], &[1.0, 0.0]]);
+    /// assert_eq!(tree.nearest_neighbors(&[1.0, 1.0]), &[&[1.0, 0.0], &[0.0, 1.0]]);
     /// assert_eq!(tree.nearest_neighbors(&[0.01, 0.01]), &[&[0.0, 0.0]]);
     /// ```
     pub fn nearest_neighbors(&self, query_point: &<T::Envelope as Envelope>::Point) -> Vec<&T> {

@@ -9,3 +9,5 @@ members = [
 # Ensure any transitive dependencies, e.g. via `geo`, use the local `rstar` crate
 [patch.crates-io]
 rstar = { path = "rstar" }
+geo = { git = "https://github.com/invenium/georust-geo.git", tag = "geo-v0.27.0-stable-abi" }
+geo-types = { git = "https://github.com/invenium/georust-geo.git", tag = "geo-types-v0.7.12-stable-abi" }
